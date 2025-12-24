@@ -1,4 +1,24 @@
 # main.py
+import os
+import sys
+
+# 1. Lấy đường dẫn tuyệt đối của thư mục chứa file main.py (thư mục gốc dự án)
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Thêm thư mục gốc này vào hệ thống tìm kiếm của Python
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+# 3. Bây giờ mới thực hiện các lệnh import khác
+import streamlit as st
+import cv2
+import numpy as np
+import pandas as pd
+from src.p1_acquisition.data_reader import DataAcquisition
+from src.p2_recognition.detector import ObjectDetector
+from src.p3_context.rule_engine import RuleEngine
+from src.p4_action.alert_manager import AlertManager
+# main.py
 import streamlit as st
 import cv2
 import numpy as np
