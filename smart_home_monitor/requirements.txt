@@ -1,0 +1,11 @@
+# Thư viện lõi cho AI và Thị giác máy tính
+ultralytics>=8.0.0      # YOLOv8: Nhận diện vật thể
+opencv-python           # OpenCV: Đọc/Xử lý video và vẽ Bounding Box
+numpy                   # Xử lý ma trận ảnh
+
+# Thư viện cho Giao diện Dashboard
+streamlit               # Tạo giao diện Web Dashboard
+pandas                  # Xử lý bảng biểu cho Log cảnh báo
+
+# Thư viện hỗ trợ
+python-dateutil         # Xử lý định dạng thời gian phức tạp
